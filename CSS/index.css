@@ -35,6 +35,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 body {
   display: flex;
@@ -117,8 +118,6 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: #7d762e;
-    border-bottom: 1px solid black;
     width: 100%;
     height: 120px;
     margin-top: 44px;
@@ -158,9 +157,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  max-width: 100%;
   height: 47px;
-  background-color: #7d772d;
 }
 @media (min-width: 1280px) {
   .tabs {
@@ -183,13 +181,13 @@ body {
   align-items: center;
   flex-direction: row;
   margin: 0 5px;
-  padding: 2px 10px;
-  letter-spacing: 2px;
+  padding: 5px 1px;
+  letter-spacing: 0px;
   cursor: pointer;
   background-color: #2b4071;
   color: #f1ef6a;
   border: 2px solid #333;
-  border-radius: .5rem;
+  border-radius: 1rem;
 }
 .tabs .topics .tab:hover {
   text-decoration: underline;
