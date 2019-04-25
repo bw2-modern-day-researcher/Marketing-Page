@@ -87,6 +87,7 @@ class TabLink {
       // Add a class of ".active-tab" to this.tabElement
   
       this.tabElement.classList.add(".active-tab");
+
   
    
   

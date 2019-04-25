@@ -4,10 +4,16 @@ class Carousel {
       this.lbtn = this.carousel.querySelector('.left-button');
       this.rbtn = this.carousel.querySelector('.right-button');
       this.img = this.carousel.querySelectorAll('img');
-      this.currentIndex = 0;
+      this.prevImg = this.currentIndex;
+      this.zero = zero;
+      this.one = one;
+      this.currentIndex = 0;      
+      this.zero.addEventListener('click', () => {this.currentIndex = 0, this.changeImg()})
+      this.one.addEventListener('click', () => {this.currentIndex = 1, this.changeImg()})
       this.lbtn.addEventListener('click', () => {this.leftButton() })
       this.rbtn.addEventListener('click', () => {this.rightButton() })
-      this.img[0].style.display = "block";
+      this.img.forEach(x => (x.style.display = "none"))
+      this.img[this.currentIndex].style.display = "block";
     }
   
     leftButton() {
@@ -30,6 +36,11 @@ class Carousel {
         this.img[this.currentIndex + 1].style.display = "block";
       }
     }
+
+    changeImg() {
+      this.img.forEach(x => (x.style.display = "none"));
+      this.img[this.currentIndex].style.display = "block"
+    }
   }
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the laft and right buttons
@@ -41,4 +52,6 @@ class Carousel {
 */ 
 
 let carousel = document.querySelector('.carousel');
+let zero = document.querySelector('.index0')
+let one = document.querySelector('.index1')
 new Carousel(carousel);
