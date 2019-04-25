@@ -223,7 +223,7 @@ body {
   padding: 24px;
 }
 .cards-container .card .headline {
-  font-size: 25px;
+  font-size: 20px;
   font-family: Didot, serif;
 }
 .cards-container .card .author {
@@ -310,4 +310,8 @@ body {
 }
 .profile {
   margin-top: -60px;
+}
+#proface {
+  height: 475px;
+  width: 46%;
 }
