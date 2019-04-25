@@ -315,3 +315,6 @@ body {
   height: 475px;
   width: 46%;
 }
+.none {
+  display: none;
+} 
