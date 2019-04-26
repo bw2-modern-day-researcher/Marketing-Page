@@ -11,7 +11,7 @@ credit to josh knell for the templet for this project.
 
 All pages are revponsive to all meadia sizes
 
-All pages have java script
+All pages have javascript
 
 All pages are user friendily
 
